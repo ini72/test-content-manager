@@ -1,0 +1,124 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 800px;
+
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+
+    float: left;
+
+    width: 40%;
+    height: auto;
+}
+
+h1{
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+p:nth-of-type(2n){
+    margin-bottom: 0;
+}
+
+p > h1, h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 400px;
+
+    padding-bottom: 50px;
+}
+
+.input{
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.input::placeholder{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.button{
+    height: 50px;
+
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #000;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .clearfix {
+        overflow: visible;
+    }
+
+    .img{
+        float: none;
+
+        width: 100%;
+    }
+
+    h1{
+        padding-top: 30px;
+        margin-bottom: 0;
+
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .input, .input::placeholder{
+        font-size: 12px;
+    }
+
+    .button{
+        font-size: 12px;
+    }
+}
